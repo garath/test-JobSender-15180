@@ -77,8 +77,6 @@ def _unpack_zipfile(archive_path, out_dir):
 def _strip_uri(uri_to_strip):
     return str(uri_to_strip).split("?")[0]
 
-os.environ['PYTHONIOENCODING'] = 'utf-8'
-
 print('ENVIRONMENT:')
 for key, value in os.environ.items():
     print('{}: {}'.format(key, value))
